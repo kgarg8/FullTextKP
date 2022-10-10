@@ -1,0 +1,8 @@
+*.
+.ipynb_checkpoints/
+__pycache__
+experiments/
+embeddings/
+pacssum_models/
+plots/
+processed_data/
