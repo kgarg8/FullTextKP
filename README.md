@@ -5,8 +5,8 @@
 <h4 align="center">Keyphrase Generation Beyond the Boundaries of Title and Abstract</h4>
 
 <p align="center">
-  <a href="https://2022.emnlp.org/"><img src="https://img.shields.io/badge/Findings%20of%20EMNLP-2022-green"></a>
-  <a href="https://arxiv.org/pdf/2112.06776.pdf"><img src="https://img.shields.io/badge/Paper-PDF-yellowgreen"></a>
+  <a href="https://aclanthology.org/2022.findings-emnlp.427/"><img src="https://img.shields.io/badge/Findings%20of%20EMNLP-2022-green"></a>
+  <a href="https://aclanthology.org/2022.findings-emnlp.427.pdf"><img src="https://img.shields.io/badge/Paper-PDF-yellowgreen"></a>
   <a href="https://github.com/kgarg8/FullTextKP/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue"></a>
   </a>
 </p>
@@ -105,11 +105,19 @@ python train.py --test=True
 Please consider citing our paper if you find this work useful:
 
 ```
-@article{garg2021keyphrase,
-  title={Keyphrase Generation Beyond the Boundaries of Title and Abstract},
-  author={Garg, Krishna and Chowdhury, Jishnu Ray and Caragea, Cornelia},
-  journal={Findings of EMNLP},
-  year={2022}
+@inproceedings{garg-etal-2022-keyphrase,
+    title = "Keyphrase Generation Beyond the Boundaries of Title and Abstract",
+    author = "Garg, Krishna  and
+      Ray Chowdhury, Jishnu  and
+      Caragea, Cornelia",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2022",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-emnlp.427",
+    pages = "5809--5821",
+    abstract = "Keyphrase generation aims at generating important phrases (keyphrases) that best describe a given document. In scholarly domains, current approaches have largely used only the title and abstract of the articles to generate keyphrases. In this paper, we comprehensively explore whether the integration of additional information from the full text of a given article or from semantically similar articles can be helpful for a neural keyphrase generation model or not. We discover that adding sentences from the full text, particularly in the form of the extractive summary of the article can significantly improve the generation of both types of keyphrases that are either present or absent from the text. Experimental results with three widely used models for keyphrase generation along with one of the latest transformer models suitable for longer documents, Longformer Encoder-Decoder (LED) validate the observation. We also present a new large-scale scholarly dataset FullTextKP for keyphrase generation. Unlike prior large-scale datasets, FullTextKP includes the full text of the articles along with the title and abstract. We release the source code at https://github.com/kgarg8/FullTextKP.",
 }
 ```
 
