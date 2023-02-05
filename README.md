@@ -5,9 +5,10 @@
 <h4 align="center">Keyphrase Generation Beyond the Boundaries of Title and Abstract</h4>
 
 <p align="center">
-  <a href="https://aclanthology.org/2022.findings-emnlp.427/"><img src="https://img.shields.io/badge/Findings%20of%20EMNLP-2022-green"></a>
-  <a href="https://aclanthology.org/2022.findings-emnlp.427.pdf"><img src="https://img.shields.io/badge/Paper-PDF-yellowgreen"></a>
+  <a href="https://aclanthology.org/2022.findings-emnlp.427/"><img src="https://img.shields.io/badge/Findings%20of%20EMNLP-2022-red"></a>
+  <a href="https://aclanthology.org/2022.findings-emnlp.427.pdf"><img src="https://img.shields.io/badge/Paper-PDF-yellow"></a>
   <a href="https://github.com/kgarg8/FullTextKP/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue"></a>
+  <a href="res/EMNLP_slides.pdf"><img src="https://img.shields.io/badge/Slides-PDF-green"></a>
   </a>
 </p>
 
