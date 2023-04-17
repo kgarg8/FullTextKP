@@ -14,7 +14,7 @@
 
 ## Create environment
 ```
-conda create -n FKP_env --python==3.6
+conda create -n FKP_env python=3.6
 
 conda activate FKP_env
 
