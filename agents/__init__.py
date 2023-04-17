@@ -1,2 +1,3 @@
 from .GRUSeq2Seq_agent import GRUSeq2Seq_agent
 from .LEDSeq2Seq_agent import LEDSeq2Seq_agent
+from .BartSeq2Seq_agent import BartSeq2Seq_agent

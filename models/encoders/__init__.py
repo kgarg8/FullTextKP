@@ -1,2 +1,3 @@
 from .GRUEncoderDecoder import GRUEncoderDecoder
 from .LEDSeq2SeqEncoderDecoder import LEDSeq2SeqEncoderDecoder
+from .BartSeq2SeqEncoderDecoder import BartSeq2SeqEncoderDecoder

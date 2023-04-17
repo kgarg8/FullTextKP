@@ -13,6 +13,7 @@ from utils.param_utils import param_display_fn, param_count
 from utils.path_utils import load_paths
 from torch.utils.data import DataLoader
 from transformers.models.led.tokenization_led import LEDTokenizer
+from transformers.models.bart.tokenization_bart import BartTokenizer
 from models import *
 from agents import *
 
@@ -76,6 +77,10 @@ def run(args, config, time=0):
     
     if args.model == 'LEDSeq2Seq':
         tokenizer      = LEDTokenizer.from_pretrained(config["embedding_path"])
+        train_collater = collater(PAD=tokenizer.pad_token_id, config=config, train=True)
+        dev_collater   = collater(PAD=tokenizer.pad_token_id, config=config, train=False)
+    elif args.model == 'BartSeq2Seq':
+        tokenizer      = BartTokenizer.from_pretrained(config["embedding_path"])
         train_collater = collater(PAD=tokenizer.pad_token_id, config=config, train=True)
         dev_collater   = collater(PAD=tokenizer.pad_token_id, config=config, train=False)
     else:
@@ -272,6 +277,7 @@ def run(args, config, time=0):
         return time, test_metric, epochs_taken
 
 def run_and_collect_results(args, config):
+    print(args.test)
     best_metrics = {}
     test_flag = '_test' if args.test else ''
     final_result_path = Path('experiments/final_results/{}_{}_{}{}.txt'.format(args.dataset, args.model, args.model_type, test_flag))

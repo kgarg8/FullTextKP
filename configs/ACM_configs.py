@@ -62,3 +62,18 @@ class LEDSeq2Seq_config(base_config):
         self.chunk_size         = self.batch_size * 4000
         self.num_beams          = 1
         self.bucket_size_factor = 1
+
+class BartSeq2Seq_config(base_config):
+    def __init__(self):
+        super().__init__()
+        self.model_name       = "(Bart Seq2Seq)"
+        self.embedding_path   = fspath(Path("embeddings/bart-base"))
+        self.optimizer        = "Adam"
+        self.lr               = 5e-5
+        self.encoder          = "BartSeq2SeqEncoderDecoder"
+        self.epochs           = 10
+        self.batch_size       = 64
+        self.train_batch_size = 64
+        self.dev_batch_size   = 64
+        self.chunk_size       = self.batch_size * 4000
+        self.num_beams        = 1

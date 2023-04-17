@@ -13,7 +13,7 @@ def str2bool(v):
 
 def get_args():
     parser = ArgumentParser(description="Seq2Seq")
-    parser.add_argument('--model', type=str, default='GRUSeq2Seq', choices=['GRUSeq2Seq', 'LEDSeq2Seq'])
+    parser.add_argument('--model', type=str, default='GRUSeq2Seq', choices=['GRUSeq2Seq', 'LEDSeq2Seq', 'BartSeq2Seq'])
     parser.add_argument('--model_type', type=str, default='Seq2Seq', choices=['Seq2Seq'])
     parser.add_argument('--dataset', type=str, default='ACM', choices=['ACM'])
     parser.add_argument('--test', type=str2bool, default=False, const=True, nargs='?')
